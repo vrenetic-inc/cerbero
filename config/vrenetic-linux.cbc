@@ -1,0 +1,12 @@
+recipes_remotes={
+  'gst-plugins-good-1.0': {'origin': 'https://github.com/amykhaylyshyn/gst-plugins-good.git'},
+  'gst-plugins-good-1.0-static': {'origin': 'https://github.com/amykhaylyshyn/gst-plugins-good.git'},
+  'gst-plugins-bad-1.0': {'origin': 'https://github.com/amykhaylyshyn/gst-plugins-bad.git'},
+  'gst-plugins-bad-1.0-static': {'origin': 'https://github.com/amykhaylyshyn/gst-plugins-bad.git'}
+}
+recipes_commits={
+  'gst-plugins-good-1.0': 'vrenetic-1.12.4.2',
+  'gst-plugins-good-1.0-static': 'vrenetic-1.12.4.2',
+  'gst-plugins-bad-1.0': 'vrenetic-1.12.4.2',
+  'gst-plugins-bad-1.0-static': 'vrenetic-1.12.4.2'
+}
