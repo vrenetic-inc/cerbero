@@ -51,7 +51,7 @@ class Recipe(recipe.Recipe):
             self.configure_options += ' --disable-cxx'
 
     def configure(self):
-        if needs_xcode8_sdk_workaround(self.config):
+        if self.config.target_platform == Platform.IOS or needs_xcode8_sdk_workaround(self.config):
             # There is no env var that can be set to make the AC_COMPILE_IFELSE
             # macro that checks this evaluate to 'no', so we change the symbol.
             # Edit configure.ac and not configure because we autoreconf later.
