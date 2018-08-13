@@ -12,6 +12,7 @@ properties([
 ])
 
 node(agentLabel) {
+  ws ("/Users/administrator/workspace/${env.JOB_NAME}-${env.BRANCH_NAME}") {
   stage('setup') {
     def gitStats = checkout scm
     env._GIT_COMMIT = gitStats["GIT_COMMIT"].substring(0, 4)
@@ -28,5 +29,6 @@ node(agentLabel) {
   stage('release') {
     gstCerbero.build()
   }
+}
 }
 
