@@ -13,7 +13,7 @@ from cerbero.utils import shell, to_unixpath
 class GStreamerBase:
 
     licenses = [License.LGPLv2Plus]
-    version = '1.12.4.14'
+    version = '1.12.4.16'
     commit = 'origin/1.12'
 
 class GStreamer(GStreamerBase, recipe.Recipe):
