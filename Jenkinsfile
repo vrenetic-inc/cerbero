@@ -5,9 +5,9 @@ def agentLabel = "Mac_build_slave"
 properties([
   parameters([
     booleanParam(
-      name: 'release',
+      name: 'bootstrap',
       defaultValue: false,
-      description: 'Release to Nexus')
+      description: 'do we need to bootstrap cerbero')
   ])
 ])
 
@@ -17,7 +17,7 @@ node(agentLabel) {
     def gitStats = checkout scm
     env._GIT_COMMIT = gitStats["GIT_COMMIT"].substring(0, 4)
 
-    gstCerbero.setup()
+    gstCerbero.setup(bootstrap: params.bootstrap)
   }
 
   stage('test') {
@@ -28,6 +28,7 @@ node(agentLabel) {
 
   stage('release') {
     gstCerbero.build()
+    gstCerbero.publish()
   }
 }
 }
