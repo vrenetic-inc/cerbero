@@ -324,6 +324,8 @@ class GitCache (Source):
             # cherry-pick patches between branches
             for remote, url in self.remotes.items():
                 git.add_remote(self.repo_dir, remote, url, logfile=get_logfile(self))
+            for remote, url in self.config.recipe_remotes(self.name).items():
+                git.add_remote(self.repo_dir, remote, url, logfile=get_logfile(self))
             # fetch remote branches
             if not self.offline:
                 git.fetch(self.repo_dir, fail=False, logfile=get_logfile(self))
