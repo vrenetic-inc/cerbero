@@ -71,6 +71,7 @@ class DistroVersion:
     DEBIAN_JESSIE = 'debian_08_jessie'
     DEBIAN_STRETCH = 'debian_09_stretch'
     DEBIAN_BUSTER = 'debian_10_buster'
+    DEBIAN_BULLSEYE = 'debian_11_bullseye'
     UBUNTU_LUCID = 'ubuntu_10_04_lucid'
     UBUNTU_MAVERICK = 'ubuntu_10_10_maverick'
     UBUNTU_NATTY = 'ubuntu_11_04_natty'
@@ -199,26 +200,14 @@ class License:
             'BSD-like License')
     FreeType = LicenseDescription('FreeType',
             'FreeType License')
-    GPLv2 = LicenseDescription('GPL-2',
-            'GNU General Public License, version 2')
     GPLv2Plus = LicenseDescription('GPL-2+',
             'GNU General Public License, version 2 or later')
-    GPLv3 = LicenseDescription('GPL-3',
-            'GNU General Public License, version 3')
     GPLv3Plus = LicenseDescription('GPL-3+',
             'GNU General Public License, version 3 or later')
-    LGPL = LicenseDescription('LGPL',
-            'GNU Lesser General Public License')
-    LGPLv2 = LicenseDescription('LGPL-2',
-            'GNU Lesser General Public License, version 2')
     LGPLv2Plus = LicenseDescription('LGPL-2+',
             'GNU Lesser General Public License, version 2 or later')
-    LGPLv2_1 = LicenseDescription('LGPL-2.1',
-            'GNU Lesser General Public License, version 2.1')
     LGPLv2_1Plus = LicenseDescription('LGPL-2.1+',
             'GNU Lesser General Public License, version 2.1 or later')
-    LGPLv3 = LicenseDescription('LGPL-3',
-            'GNU Lesser General Public License, version 3')
     LGPLv3Plus = LicenseDescription('LGPL-3+',
             'GNU Lesser General Public License, version 3 or later')
     LibPNG = LicenseDescription('LibPNG',
