@@ -256,6 +256,8 @@ def system_info():
                 distro_version = DistroVersion.FEDORA_29
             elif d[1] == '30':
                 distro_version = DistroVersion.FEDORA_30
+            elif d[1] == '31':
+                distro_version = DistroVersion.FEDORA_31
             elif d[1].startswith('6.'):
                 distro_version = DistroVersion.REDHAT_6
             elif d[1].startswith('7.'):
@@ -304,7 +306,9 @@ def system_info():
     elif platform == Platform.DARWIN:
         distro = Distro.OS_X
         ver = pplatform.mac_ver()[0]
-        if ver.startswith('10.14'):
+        if ver.startswith('10.15'):
+            distro_version = DistroVersion.OS_X_CATALINA
+        elif ver.startswith('10.14'):
             distro_version = DistroVersion.OS_X_MOJAVE
         elif ver.startswith('10.13'):
             distro_version = DistroVersion.OS_X_HIGH_SIERRA
