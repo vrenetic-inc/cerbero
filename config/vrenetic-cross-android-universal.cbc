@@ -25,8 +25,8 @@ recipes_remotes={
   'gst-plugins-bad-1.0-static': {'origin': 'https://github.com/vrenetic-inc/gst-plugins-bad.git'}
 }
 recipes_commits={
-  'gst-plugins-good-1.0': '1.16.0.2-vrenetic',
-  'gst-plugins-good-1.0-static': '1.16.0.2-vrenetic',
-  'gst-plugins-bad-1.0': '1.16.0.4-vrenetic',
-  'gst-plugins-bad-1.0-static': '1.16.0.4-vrenetic'
+  'gst-plugins-good-1.0': '1.16.1.1-vrenetic',
+  'gst-plugins-good-1.0-static': '1.16.1.1-vrenetic',
+  'gst-plugins-bad-1.0': '1.16.1.2-vrenetic',
+  'gst-plugins-bad-1.0-static': '1.16.1.2-vrenetic'
 }
